@@ -1,0 +1,43 @@
+.about-section h1{
+    margin-top: 30px;
+    margin-bottom: 7%;
+    align-items:center ;
+}
+.homeimage{
+    margin-top: 10%;
+    height: 350px;
+    width: 500px;
+}
+.rrrdata{
+    align-items: flex-start;
+    text-align: left;
+}
+.about p{
+    text-align: left;
+    padding-right: 400px;
+}
+.data {
+    margin-top: 50px;
+    margin-left: 15px;
+    text-align: left;
+    height: 300px;
+    width: 350px;
+    display: inline-flex;
+}
+.about-section .data{
+    display:inline-flex;
+}
+.rrrs{
+    font-size:30px ;
+    margin-right: 20px;
+    
+}
+.rrrs b{
+    
+    font-size: 40px;
+color: rgb(75, 136, 74);
+}
+.rrrs p{
+    font-size: 10px;
+}
+
