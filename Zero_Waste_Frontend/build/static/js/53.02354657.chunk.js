@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_Zero_Waste=self.webpackChunk_Zero_Waste||[]).push([[53],{36053:function(e,t,s){s.r(t);s(72791);var a=s(6165),n=s.n(a),r=(s(73068),s(80184));t.default=function(){return(0,r.jsx)("div",{className:"type",children:(0,r.jsx)(n(),{options:{strings:["Go Green Breathe Clean ","Zero Waste,Save Earth","Use.Recycle.Reuse","Think Before You Trash It"],autoStart:!0,loop:!0,deleteSpeed:50}})})}},73068:function(){}}]);
+//# sourceMappingURL=53.02354657.chunk.js.map
