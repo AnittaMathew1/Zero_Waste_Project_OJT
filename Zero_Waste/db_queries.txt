@@ -1,0 +1,132 @@
+create table houseowner_data(
+	id serial NOT NULL PRIMARY KEY,
+	firstname varchar(200) NOT NULL,
+	lastname varchar(200) NOT NULL,
+	email varchar(200) NOT NULL,
+	phoneno varchar(200) NOT NULL,
+	address varchar(1000) NOT NULL,
+	pincode varchar(50) NOT NULL,
+	wardno int NOT NULL,
+	FOREIGN KEY (wardno) REFERENCES ward(wardno)
+)
+
+create table houseowner_slotbooking(
+	id serial NOT NULL PRIMARY KEY,
+	booking_date DATE NOT NULL,
+	quantity DOUBLE PRECISION NOT NULL,
+	payment_status INT NOT NULL,
+	houseowner_id BIGINT NOT NULL,
+	waste_id BIGINT NOT NULL,
+	FOREIGN KEY (houseowner_id) REFERENCES houseowner_data(id),
+	FOREIGN KEY (waste_id) REFERENCES waste(waste_id)
+);
+
+
+create table houseowner_bookingstatus(
+	id serial NOT NULL PRIMARY KEY,
+	status VARCHAR(200) NOT NULL,
+	collection_date DATE,
+	collection_date DATE NOT NULL,
+	slot_id BIGINT NOT NULL,
+	supervisor_id BIGINT NOT NULL,,
+	FOREIGN KEY (slot_id) REFERENCES houseowner_slotbooking(id),
+	FOREIGN KEY (supervisor_id) REFERENCES corporation_employee(id)
+);
+
+
+create table corporation_roles(
+	id serial NOT NULL PRIMARY KEY,
+	rolename VARCHAR(50) NOT NULL
+	);
+
+create table corporation_employee(
+	id serial NOT NULL PRIMARY KEY,
+	firstname varchar(200),
+	lastname varchar(200),
+	email varchar(200) NOT NULL,
+	phoneno varchar(200),
+	address varchar(1000),
+	role_id BIGINT NOT NULL,
+	FOREIGN KEY (role_id) REFERENCES corporation_roles(id)
+);
+
+
+create table houseowner_payment(
+	id serial NOT NULL PRIMARY KEY,
+	total_amount DOUBLE PRECISION NOT NULL,
+	pay_date DATE NOT NULL,
+	houseowner_id BIGINT NOT NULL,
+	FOREIGN KEY (houseowner_id) REFERENCES houseowner_data(id)
+	);
+
+create table houseowner_paymentstatus(
+	id serial NOT NULL PRIMARY KEY,
+	last_paydate DATE NOT NULL,
+	houseowner_id BIGINT NOT NULL,
+	FOREIGN KEY (houseowner_id) REFERENCES houseowner_data(id)
+	);
+
+create table corporation_wastecollector(
+	id serial NOT NULL PRIMARY KEY,
+	firstname varchar(200) NOT NULL,
+	lastname varchar(200) NOT NULL,
+	email varchar(200) ,
+	phoneno varchar(200) NOT NULL,
+	address varchar(1000) NOT NULL,
+	ward_no BIGINT NOT NULL,
+	FOREIGN KEY (ward_no) REFERENCES ward(wardno)
+);
+
+
+
+create table houseowner_collectionstatus(
+	id serial NOT NULL PRIMARY KEY,
+	status VARCHAR(200),
+	collection_date DATE,
+	supervisor_id BIGINT NOT NULL,
+	ward_no BIGINT NOT NULL,
+	FOREIGN KEY (supervisor_id) REFERENCES corporation_employee(id),
+	FOREIGN KEY (ward_no) REFERENCES ward(wardno)
+	);
+
+create table login(
+	id serial NOT NULL PRIMARY KEY,
+	userid BIGINT NOT NULL,
+	email varchar(200) NOT NULL,
+	password varchar(200) NOT NULL,
+	role_id int NOT NULL,
+	FOREIGN KEY (role_id) REFERENCES corporation_roles(id)
+);
+
+INSERT INTO corporation_employee (id, email, role_id) VALUES ('1', 'superadmin@corporation.tvm', '2');
+INSERT INTO corporation_employee (id, email, role_id) VALUES ('2', 'admin@corporation.tvm', '3');
+INSERT INTO corporation_employee (id, firstname, lastname, email, role_id) VALUES ('3', 'Ramdas', 'P K', 'ramdaspk@gmail.com', '4');
+INSERT INTO corporation_employee (id, firstname, lastname, email, role_id) VALUES ('4', 'Sreekumar', 'J', 'sreekumarj@gmail.com', '4');
+INSERT INTO corporation_employee (id, firstname, lastname, email, role_id) VALUES ('5', 'Rajesh', 'Kumar', 'rajeshk@gmail.com', '4');
+
+
+INSERT INTO corporation_roles (id, rolename) VALUES ('1', 'Houseowner');
+INSERT INTO corporation_roles (id, rolename) VALUES ('2', 'SuperAdmin');
+INSERT INTO corporation_roles (id, rolename) VALUES ('3', 'Admin');
+INSERT INTO corporation_roles (id, rolename) VALUES ('4', 'Supervisor');
+
+
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('1', 'Amit', 'Nair', 'amit@gmail.com', '9767564354', 'pra 31 Nalanchira Tvm', '14');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('2', 'Gerorge', 'J', 'george@gmail.com', '7687654345', 'sra656,Nalanchira Tvm', '14');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('3', 'Jacob', 'Thomas', 'jacob@gmail.com', '9878631976', 'sra786 Nalanchira Tvm', '14');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('4', 'Edwin', 'John', 'edwin@gmail.com', '7896509872', 'mra654 Mananthala Tvm', '14');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('5', 'Akash', 'Mohan', 'akash@gmail.com', '9898761765', 'ha54a Nalachira Tvm', '14');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('6', 'Joseph', 'Joji', 'joseph@gmail.com', '7865769087', 'kra43 Kazhakuttom Tvm', '1');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('7', 'Deepak', 'Menon', 'deepak@gmail.com', '6787985678', 'kra56t Kazhakuttom', '1');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('8', 'Thomas', 'Joise', 'thomas@gmail.com', '9834258790', 'ara67 Kazhakuttom Tvm', '1');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('9', 'Aswin', 'Raj', 'aswin@gmail.com', '8970985645', 'ara897 Kazhakuttom Tvm', '1');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('10', 'Richie', 'Philip', 'richie@gmail.com', '9898786756', 'vra656 Kazhakuttom Tvm', '1');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('11', 'Abin', 'Abraham', 'abin@gmail.com', '7878989809', 'vra767 Kowdiar Tvm ', '23');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('12', 'Sreehari', 'J', 'sreehari@gmail.com', '6567890879', 'kra65 Kowdiar Tvm', '23');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('13', 'Anantha', 'Krishnan', 'ananthan@gmail.com', '9987125678', 'kra82 Kowdiar Tvm', '23');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('14', 'Sidharth', 'Prakash', 'sidharth@gmail.com', '7787908976', 'nra78 Kowdiar Tvm', '23');
+INSERT INTO corporation_wastecollector (id, firstname, lastname, email, phoneno, address, ward_no) VALUES ('15', 'Vaishnav', 'P', 'vaishnav@gmail.com', '9878678987', 'dra65 Kowdiar Tvm', '23');
+
+SELECT * FROM ward;
+INSERT INTO ward (wardno, wardname) VALUES ('23', 'KOWDIAR');
+INSERT INTO ward (wardno, wardname) VALUES ('24', 'KURAVANKONAM');

@@ -1,0 +1,670 @@
+[01-10 16:10:28] p22288 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 25, in register_houseowner
+    wardno = int(request.args.get('wardno'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[01-10 16:11:14] p23844 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 25, in register_houseowner
+    wardno = int(request.args.get('wardno'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[01-10 16:12:41] p18508 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 25, in register_houseowner
+    wardno = int(request.args.get('wardno'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[01-10 16:14:14] p24052 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 25, in register_houseowner
+    wardno = int(request.args.get('wardno'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[01-10 16:37:47] p21760 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/slotbooking [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-11 11:35:56] p2188 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (41, null, null, null, null, null, null, null).
+
+[01-11 12:20:45] p20836 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (42, null, null, null, null, null, null, null).
+
+[01-11 12:25:56] p12580 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (43, null, null, null, null, null, null, null).
+
+[01-11 12:37:09] p25976 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (44, null, null, null, null, null, null, null).
+
+[01-11 12:37:27] p24816 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (45, null, null, null, null, null, null, null).
+
+[01-11 12:48:02] p23600 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (46, null, null, null, null, null, null, null).
+
+[01-11 12:49:27] p13188 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (47, null, null, null, null, null, null, null).
+
+[01-11 12:54:26] p19440 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (48, null, null, null, null, null, null, null).
+
+[01-11 12:54:54] p18072 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (49, null, null, null, null, null, null, null).
+
+[01-11 13:06:10] p9396 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (50, null, null, null, null, null, null, null).
+
+[01-11 13:06:42] p25264 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (51, null, null, null, null, null, null, null).
+
+[01-11 13:09:25] p20380 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (52, null, null, null, null, null, null, null).
+
+[01-11 13:13:27] p16392 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (53, null, null, null, null, null, null, null).
+
+[01-11 13:14:10] p24588 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (54, null, null, null, null, null, null, null).
+
+[01-11 13:16:03] p23608 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (55, null, null, null, null, null, null, null).
+
+[01-11 13:16:17] p24312 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (56, null, null, null, null, null, null, null).
+
+[01-11 13:17:29] p24824 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (57, null, null, null, null, null, null, null).
+
+[01-11 13:59:29] p24844 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (58, null, null, null, null, null, null, null).
+
+[01-11 13:59:42] p6196 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (59, null, null, null, null, null, null, null).
+
+[01-11 14:28:30] p14080 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (60, null, null, null, null, null, null, null).
+
+[01-11 14:29:03] p21744 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (61, null, null, null, null, null, null, null).
+
+[01-11 14:41:55] p356 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (62, null, null, null, null, null, null, null).
+
+[01-11 14:49:38] p24384 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (63, null, null, null, null, null, null, null).
+
+[01-11 14:49:57] p21124 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: register_houseowner() missing 1 required positional argument: 'request'
+[01-11 14:52:54] p22232 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (64, null, null, null, null, null, null, null).
+
+[01-11 15:09:11] p296 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.NotNullViolation: null value in column "firstname" of relation "houseowner_data" violates not-null constraint
+DETAIL:  Failing row contains (65, null, null, null, null, null, null, null).
+
+[01-11 15:38:39] p12584 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 19, in register_houseowner
+    firstname = request.data('firstname')
+TypeError: 'bytes' object is not callable
+[01-11 15:42:04] p20272 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 19, in register_houseowner
+    firstname = request.data('firstname')
+TypeError: 'bytes' object is not callable
+[01-11 15:43:37] p25748 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 19, in register_houseowner
+    firstname = request.data['firstname']
+TypeError: byte indices must be integers or slices, not str
+[01-11 15:47:43] p24624 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 20, in register_houseowner
+    lastname = request.data['lastname']
+TypeError: byte indices must be integers or slices, not str
+[01-11 15:48:09] p23980 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 33, in register_houseowner
+    cur.execute('INSERT INTO login (email,password,role_id)' 'VALUES (%s,%s,%s)',( email, password, roleid))
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "login_pkey"
+DETAIL:  Key (id)=(3) already exists.
+
+[01-11 15:49:15] p19920 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 33, in register_houseowner
+    cur.execute('INSERT INTO login (email,password,role_id)' 'VALUES (%s,%s,%s)',( email, password, roleid))
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "login_pkey"
+DETAIL:  Key (id)=(4) already exists.
+
+[01-11 15:49:21] p24228 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 33, in register_houseowner
+    cur.execute('INSERT INTO login (email,password,role_id)' 'VALUES (%s,%s,%s)',( email, password, roleid))
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "login_pkey"
+DETAIL:  Key (id)=(5) already exists.
+
+[01-11 15:49:35] p24872 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 33, in register_houseowner
+    cur.execute('INSERT INTO login (email,password,role_id)' 'VALUES (%s,%s,%s)',( email, password, roleid))
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "login_pkey"
+DETAIL:  Key (id)=(6) already exists.
+
+[01-11 15:49:37] p24404 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 33, in register_houseowner
+    cur.execute('INSERT INTO login (email,password,role_id)' 'VALUES (%s,%s,%s)',( email, password, roleid))
+psycopg2.errors.ForeignKeyViolation: insert or update on table "login" violates foreign key constraint "login_userid_fkey"
+DETAIL:  Key (userid)=(6) is not present in table "houseowner_data".
+
+[01-11 15:51:54] p24332 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 33, in register_houseowner
+    cur.execute('INSERT INTO login (email,password,role_id)' 'VALUES (%s,%s,%s)',( email, password, roleid))
+psycopg2.errors.ForeignKeyViolation: insert or update on table "login" violates foreign key constraint "login_userid_fkey"
+DETAIL:  Key (userid)=(7) is not present in table "houseowner_data".
+
+[01-11 15:54:06] p18736 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 33, in register_houseowner
+    cur.execute('INSERT INTO login (email,password,role_id)' 'VALUES (%s,%s,%s)',( email, password, roleid))
+psycopg2.errors.ForeignKeyViolation: insert or update on table "login" violates foreign key constraint "login_userid_fkey"
+DETAIL:  Key (userid)=(8) is not present in table "houseowner_data".
+
+[01-11 16:05:40] p8072 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 33, in register_houseowner
+    cur.execute('INSERT INTO login (email,password,role_id)' 'VALUES (%s,%s,%s)',( email, password, roleid))
+psycopg2.errors.NotNullViolation: null value in column "userid" of relation "login" violates not-null constraint
+DETAIL:  Failing row contains (1, null, anju@gmail.com, anju@123, 1).
+
+[01-11 16:12:03] p19980 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)RETURNING id',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "houseowner_data_email_key"
+DETAIL:  Key (email)=(anju@gmail.com) already exists.
+
+[01-11 16:42:46] p23948 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/registerhouseowner [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\house_owner\house_owner.py", line 32, in register_houseowner
+    cur.execute('INSERT INTO houseowner_data(firstname, lastname, email, phoneno, address, pincode, wardno)' 'VALUES (%s,%s,%s,%s,%s,%s,%s)RETURNING id',(firstname, lastname, email, phoneno, address, pincode, wardno))
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "houseowner_data_email_key"
+DETAIL:  Key (email)=(anjuuu@gmail.com) already exists.
+
+[01-11 16:49:54] p22952 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /houseowner/paymenthistory [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'

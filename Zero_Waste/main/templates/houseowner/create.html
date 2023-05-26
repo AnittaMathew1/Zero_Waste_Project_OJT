@@ -1,0 +1,61 @@
+
+{% block content %}
+    <h1>{% block title %}REGISTER USER {% endblock %}</h1>
+    <form method="post">
+        <p>
+            <label for="firstname">firstname</label>
+            <input type="text" name="firstname"
+                   placeholder="firstname">
+            </input>
+        </p>
+
+        <p>
+            <label for="lastname">lastname</label>
+            <input type="lastname" name="lastname"
+                   placeholder="lastname">
+            </input>
+        </p>
+
+        <p>
+            <label for="email">email</label>
+            <input type="email" name="email"
+                   placeholder="email">
+            </input>
+        </p>
+        <p>
+            <label for="phoneno">phoneno</label>
+            <input type="phoneno" name="phoneno"
+                   placeholder="phoneno">
+            </input>
+        </p>
+
+        <p>
+            <label for="address">address</label>
+            <input type="address" name="address"
+                   placeholder="address">
+            </input>
+        </p>
+
+        <p>
+            <label for="pincode">pincode</label>
+            <input type="pincode" name="pincode"
+                   placeholder="pincode">
+            </input>
+        </p>
+        <p>
+            <label for="wardno">wardno</label>
+            <input type="wardno" name="wardno"
+                   placeholder="wardno">
+            </input>
+        </p>
+        <p>
+            <label for="password">password</label>
+            <input type="password" name="password"
+                   placeholder="password">
+            </input>
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+{% endblock %}

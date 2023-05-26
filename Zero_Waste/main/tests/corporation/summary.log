@@ -1,0 +1,777 @@
+[01-10 12:14:43] p16420 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:72} ERROR - local variable 'conn' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 56, in get_waste_details
+    if conn:
+UnboundLocalError: local variable 'conn' referenced before assignment
+[01-10 12:14:43] p16420 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/wastedata [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 77, in get_waste_details
+    if conn:
+UnboundLocalError: local variable 'conn' referenced before assignment
+[01-10 12:21:35] p7680 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:72} ERROR - local variable 'conn' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 56, in get_waste_details
+    if conn:
+UnboundLocalError: local variable 'conn' referenced before assignment
+[01-10 12:21:35] p7680 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/wastedata [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 77, in get_waste_details
+    if conn:
+UnboundLocalError: local variable 'conn' referenced before assignment
+[01-10 12:31:16] p15356 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 12:33:37] p22884 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 12:37:39] p23076 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 12:42:08] p22548 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: getSupervisors() missing 1 required positional argument: 'payload'
+[01-10 12:42:24] p12364 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: getSupervisors() missing 1 required positional argument: 'payload'
+[01-10 14:45:22] p2696 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 14:47:32] p5396 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 14:48:44] p13860 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 14:50:30] p2320 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 14:55:54] p21368 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 15:00:19] p17468 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 15:01:55] p23700 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 15:05:42] p18632 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 15:07:44] p24476 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 15:08:33] p12040 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 15:09:43] p21416 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 15:10:44] p22540 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 15:14:13] p23648 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/supervisorlist [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'
+[01-10 15:14:13] p23648 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/collectorlist [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 154, in _load
+    header = json.loads(header_data.decode('utf-8'))
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 1-2: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 20, in wrap
+    payload=jwt.decode(token,'secret',algorithms=['HS256'])
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jwt.py", line 61, in decode
+    payload, signing_input, header, signature = self._load(jwt)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 156, in _load
+    raise DecodeError('Invalid header string: %s' % e)
+jwt.exceptions.DecodeError: Invalid header string: 'utf-8' codec can't decode bytes in position 1-2: invalid continuation byte
+[01-10 15:16:23] p2320 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/collectorlist [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 154, in _load
+    header = json.loads(header_data.decode('utf-8'))
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 1-2: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 20, in wrap
+    payload=jwt.decode(token,'secret',algorithms=['HS256'])
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jwt.py", line 61, in decode
+    payload, signing_input, header, signature = self._load(jwt)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 156, in _load
+    raise DecodeError('Invalid header string: %s' % e)
+jwt.exceptions.DecodeError: Invalid header string: 'utf-8' codec can't decode bytes in position 1-2: invalid continuation byte
+[01-10 15:16:58] p13936 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/collectorlist [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 154, in _load
+    header = json.loads(header_data.decode('utf-8'))
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 1-2: invalid continuation byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 20, in wrap
+    payload=jwt.decode(token,'secret',algorithms=['HS256'])
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jwt.py", line 61, in decode
+    payload, signing_input, header, signature = self._load(jwt)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 156, in _load
+    raise DecodeError('Invalid header string: %s' % e)
+jwt.exceptions.DecodeError: Invalid header string: 'utf-8' codec can't decode bytes in position 1-2: invalid continuation byte
+[01-10 15:19:39] p4148 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/collectorlist [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 23, in wrap
+    return function(payload)
+TypeError: postCollectorList() takes 0 positional arguments but 1 was given
+[01-10 15:41:34] p21532 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:33:26] p22448 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:34:33] p15308 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:34:56] p5992 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:38:09] p16320 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:44:12] p6472 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:44:42] p17896 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:45:04] p10756 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:45:04] p10756 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/wastereport [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 23, in wrap
+    return function(payload)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 328, in postWasteReport
+    wasteid = int(request.args.get('wasteid'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[01-10 17:46:19] p24084 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:46:19] p24084 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/wastereport [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 23, in wrap
+    return function(payload)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 328, in postWasteReport
+    wasteid = int(request.args.get('wasteid'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[01-10 17:46:40] p21440 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:46:40] p21440 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/wastereport [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 23, in wrap
+    return function(payload)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 328, in postWasteReport
+    wasteid = int(request.args.get('wasteid'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[01-10 17:48:50] p10176 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:48:50] p10176 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/wastereport [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 23, in wrap
+    return function(payload)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 328, in postWasteReport
+    wasteid = int(request.args.get('wasteid'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[01-10 17:49:26] p20016 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:49:26] p20016 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/wastereport [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 23, in wrap
+    return function(payload)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 328, in postWasteReport
+    wasteid = int(request.args.get('wasteid'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[01-10 17:50:13] p13808 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:56:16] p8096 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:56:16] p8096 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/collectionstatusupdate [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 143, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 20, in wrap
+    payload=jwt.decode(token,'secret',algorithms=['HS256'])
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jwt.py", line 61, in decode
+    payload, signing_input, header, signature = self._load(jwt)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 146, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+[01-10 17:57:14] p22280 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:57:15] p22280 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/collectionstatusupdate [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 143, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 20, in wrap
+    payload=jwt.decode(token,'secret',algorithms=['HS256'])
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jwt.py", line 61, in decode
+    payload, signing_input, header, signature = self._load(jwt)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 146, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+[01-10 17:58:24] p23236 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:58:25] p23236 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/collectionstatusupdate [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 143, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 20, in wrap
+    payload=jwt.decode(token,'secret',algorithms=['HS256'])
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jwt.py", line 61, in decode
+    payload, signing_input, header, signature = self._load(jwt)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 146, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+[01-10 17:58:34] p23892 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:58:34] p23892 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/collectionstatusupdate [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 143, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 20, in wrap
+    payload=jwt.decode(token,'secret',algorithms=['HS256'])
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jwt.py", line 61, in decode
+    payload, signing_input, header, signature = self._load(jwt)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 146, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+[01-10 17:58:43] p21188 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 17:58:43] p21188 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/collectionstatusupdate [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 143, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 20, in wrap
+    payload=jwt.decode(token,'secret',algorithms=['HS256'])
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jwt.py", line 61, in decode
+    payload, signing_input, header, signature = self._load(jwt)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 146, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+[01-10 18:00:15] p14468 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 18:00:15] p14468 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/collectionstatusupdate [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 143, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 20, in wrap
+    payload=jwt.decode(token,'secret',algorithms=['HS256'])
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jwt.py", line 61, in decode
+    payload, signing_input, header, signature = self._load(jwt)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 146, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+[01-10 18:01:36] p22244 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-10 18:01:36] p22244 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/collectionstatusupdate [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 143, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 20, in wrap
+    payload=jwt.decode(token,'secret',algorithms=['HS256'])
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jwt.py", line 61, in decode
+    payload, signing_input, header, signature = self._load(jwt)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 146, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments
+[01-13 12:18:39] p8032 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py:209} ERROR - local variable 'collection_date' referenced before assignment
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\corporation\corporation.py", line 181, in postCollectionStatus
+    cur.execute('SELECT * FROM houseowner_collectionstatus WHERE collection_date = %s',[collection_date])
+UnboundLocalError: local variable 'collection_date' referenced before assignment
+[01-13 12:18:39] p8032 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/paymentreport [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2134, in make_response
+    raise TypeError(
+TypeError: The view function for 'corporation.getPaymentReport' did not return a valid response. The function either returned None or ended without a return statement.
+[01-13 12:18:39] p8032 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/paymentreport [GET]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2134, in make_response
+    raise TypeError(
+TypeError: The view function for 'corporation.getPaymentReport' did not return a valid response. The function either returned None or ended without a return statement.
+[01-13 12:18:39] p8032 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/collectionstatusupdate [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 143, in _load
+    signing_input, crypto_segment = jwt.rsplit(b'.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 20, in wrap
+    payload=jwt.decode(token,'secret',algorithms=['HS256'])
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jwt.py", line 61, in decode
+    payload, signing_input, header, signature = self._load(jwt)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\jwt\api_jws.py", line 146, in _load
+    raise DecodeError('Not enough segments')
+jwt.exceptions.DecodeError: Not enough segments

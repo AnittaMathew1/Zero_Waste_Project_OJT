@@ -1,0 +1,15 @@
+[01-10 15:47:29] p9748 {D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py:1741} ERROR - Exception on /corporation/collectorlist [POST]
+Traceback (most recent call last):
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\main\resources\auth\auth.py", line 16, in wrap
+    token=request.headers['Authorization']
+  File "D:\ESS_OJT\ESS%20OJT%20Dec22\Zero_Waste\.venv\lib\site-packages\werkzeug\datastructures.py", line 1381, in __getitem__
+    return _unicodify_header_value(self.environ[f"HTTP_{key}"])
+KeyError: 'HTTP_AUTHORIZATION'

@@ -1,0 +1,1376 @@
+import classes from './Houseownerservices.module.css'
+import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarCheck } from '@fortawesome/free-solid-svg-icons'
+import { faMoneyBills } from '@fortawesome/free-solid-svg-icons'
+import { faClockRotateLeft } from '@fortawesome/free-solid-svg-icons'
+import { faUserClock } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlassChart } from '@fortawesome/free-solid-svg-icons'
+import {
+  CCardFooter,
+  CCard,
+  CCardBody,
+  CCardTitle,
+  CCol,
+  CRow,
+} from '@coreui/react'
+
+
+const Homeservices = () => {
+  return (
+    <div style={{marginTop:'5%', marginLeft:'10%', marginRight:'10%'}}>
+    <CRow xs={{ cols: 2, gutter: 4 }} md={{ cols: 2 }} >
+    <CCol xs>
+      <CCard>
+      <NavLink to="/slotbooking" className={classes.usertext}>
+        <CCardBody>
+            <h1>
+              <FontAwesomeIcon icon={faCalendarCheck} />
+              </h1>
+          <CCardTitle>Slot Booking</CCardTitle>
+        </CCardBody>
+        </NavLink>
+        <CCardFooter>
+          <small className="text-medium-emphasis"><center>Book your slot to collect the waste</center></small>
+        </CCardFooter>
+      </CCard>
+    </CCol>
+    <CCol xs>
+      <CCard>
+      <NavLink to="/invoice" className={classes.usertext}>
+        <CCardBody>
+          <h1>
+            <FontAwesomeIcon icon={faMoneyBills} />
+          </h1>
+          <CCardTitle>Bill Payment</CCardTitle>
+        </CCardBody>
+        </NavLink>
+        <CCardFooter>
+          <small className="text-medium-emphasis"><center>Pay your bill online</center></small>
+        </CCardFooter>
+      </CCard>
+    </CCol>
+    <CCol xs>
+      <CCard>
+      <NavLink to="/paymenthistory" className={classes.usertext}>
+        <CCardBody>
+          <h1>
+            <FontAwesomeIcon icon={faClockRotateLeft} />
+          </h1>
+          <CCardTitle>Payment History</CCardTitle>
+        </CCardBody>
+        </NavLink>
+        <CCardFooter>
+          <small className="text-medium-emphasis"><center>View your payments</center></small>
+        </CCardFooter>
+      </CCard>
+    </CCol>
+    <CCol xs>
+      <CCard>
+      <NavLink to="/BookingHistory" className={classes.usertext}>
+        <CCardBody>
+          <h1>
+            <FontAwesomeIcon icon={faUserClock} />
+          </h1>
+          <CCardTitle>Booking History</CCardTitle>
+        </CCardBody>
+        </NavLink>
+        <CCardFooter>
+          <small className="text-medium-emphasis"><center>View your bookings</center></small>
+        </CCardFooter>
+       
+      </CCard>
+    </CCol>
+    <CCol xs>
+      <CCard>
+      <NavLink to="/bookingstatus" className={classes.usertext}>
+        <CCardBody>
+          <h1>
+            <FontAwesomeIcon icon={faMagnifyingGlassChart} />
+          </h1>
+          <CCardTitle>Booking Status</CCardTitle>
+        </CCardBody>
+        </NavLink>
+        <CCardFooter>
+          <small className="text-medium-emphasis"><center>View your current booking status</center></small>
+        </CCardFooter>
+       
+      </CCard>
+    </CCol>
+  </CRow>
+  </div>
+  )
+}
+const textstyle = {
+  color: 'black',
+  textAlign: 'center',
+  textdecoration: 'none',
+}
+export default Homeservices
+
+
+
+
+
+import './SuperAdminServices.css'
+import { NavLink } from 'react-router-dom'
+import { CRow, CContainer} from '@coreui/react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarCheck } from '@fortawesome/free-solid-svg-icons'
+import { faPersonDigging } from '@fortawesome/free-solid-svg-icons'
+import { faTrashCanArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faUserClock } from '@fortawesome/free-solid-svg-icons'
+
+const SuperAdminservices = () => {
+  return (
+    <CContainer className="cards">
+      <CRow style={{ marginTop: '10rem' }}>
+          <h1>
+            <FontAwesomeIcon icon={faCalendarCheck} />
+          </h1>
+            <NavLink to="/bookingstatusreport">
+                <h4>Allocate Collector</h4>
+            </NavLink>
+        <i class="fa-solid "></i>
+        <h1>
+            <FontAwesomeIcon icon={faPersonDigging} />
+          </h1>
+            <NavLink to="/contractemployee">
+                <h4>Contract Employees</h4>
+            </NavLink>
+           <h1>
+            <FontAwesomeIcon icon={faTrashCanArrowUp} />
+          </h1>
+            <NavLink to="/BookingHistory">
+                <h4>Update Waste details</h4>
+            </NavLink>
+
+        <h1>
+            <FontAwesomeIcon icon={faUserClock} />
+          </h1>
+            <NavLink to="/wastecollectionstatus">
+                <h4>Waste Collection Status</h4>
+            </NavLink>
+      </CRow>
+    </CContainer>
+  )
+}
+
+const textstyle = {
+  color: 'black',
+  textAlign: 'center',
+  textdecoration: 'none',
+}
+
+export default SuperAdminservices
+
+Created Components for booking status , booking history and waste report
+
+
+
+- Created components for booking status
+- Created components for booking history
+- Changed layout of houseowner-dashboard and super admin-dashboard
+- Created component for waste report
+
+
+
+appheader.js
+
+
+import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { CContainer, CHeader, CHeaderNav, CHeaderToggler } from '@coreui/react'
+import CIcon from '@coreui/icons-react'
+import { cilBell, cilEnvelopeOpen, cilList, cilMenu } from '@coreui/icons'
+import { AppHeaderDropdown } from './header/index'
+
+const AppHeader = () => {
+  const dispatch = useDispatch()
+  const sidebarShow = useSelector((state) => state.sidebarShow)
+
+  return (
+    <CHeader position="sticky" className="mb-4">
+      <CHeaderToggler
+        className="ps-1"
+        onClick={() => dispatch({ type: 'set', sidebarShow: !sidebarShow })}
+      >
+        <CIcon icon={cilMenu} size="lg" />
+      </CHeaderToggler>
+      <CHeaderNav className="ps-1">
+        Register
+      </CHeaderNav>
+      <CHeaderNav className="justify-conent-end">
+        Login
+      </CHeaderNav>
+      <CHeaderNav className="ms-3">
+        <AppHeaderDropdown />
+      </CHeaderNav>
+      <CContainer fluid />
+    </CHeader>
+  )
+}
+
+export default AppHeader
+
+
+
+
+
+
+login.js aswanth:
+import React, { useState, useRef, useContext } from 'react'import { Link,Navigate,useNavigate } from 'react-router-dom'import AuthContext from './Authcontext'import {  CButton,  CCard,  CCardBody,  CCardGroup,  CCol,  CContainer,  CForm,  CFormInput,  CInputGroup,  CInputGroupText,  CRow,} from '@coreui/react'import CIcon from '@coreui/icons-react'import { cilLockLocked, cilUser } from '@coreui/icons'import { exact } from 'prop-types'const Login = () => {  const emailInputRef = useRef();  const passwordInputRef = useRef();  const authCtx = useContext(AuthContext);  const navigate = useNavigate()  const [validated, setValidated] = useState(false)  const [userValidationError, setUserValidationError] = useState("")  const submitHandler = (event) => {    const form = event.currentTarget    console.log(form.checkValidity())    if (form.checkValidity() === false) {      setValidated(false)      event.preventDefault()      event.stopPropagation()      }    setValidated(true)    event.preventDefault();     const enteredEmail = emailInputRef.current.value;    const enteredPassword = passwordInputRef.current.value;    let url;      url =        'http://127.0.0.1:5000/auth/login';       fetch(url, {      method: 'POST',      body: JSON.stringify({               email: enteredEmail,        password: enteredPassword,        returnSecureToken: true,      }),      headers: {        'Content-Type': 'application/json',      },    })      .then(async (res) => {        if (res.ok) {          return res.json();               } else {          const data = await res.json()          let errorMessage = 'Authentication failed!'          throw new Error(errorMessage)        }      })      .then((data) => {        if(data.token){          authCtx.login(data.token);          navigate("/dashboard")          authCtx.isLoggedIn = !data.token;        }        else if (data.status != 200){          setUserValidationError("Invalid email or password")        }        sessionStorage.setItem('jwt',JSON.stringify(data.token))             })      .catch((err) => {        alert(err.message);      });  }; return (    <div className="bg-light min-vh-100 d-flex flex-row align-items-center">      <CContainer>        <CRow className="justify-content-center">          <CCol md={5}>            <CCardGroup>              <CCard className="p-4">                <CCardBody>                  <CForm                    className="row g-3 needs-validation "                    noValidate                    validated={validated}                    onSubmit={submitHandler}                  >                    <h1>Login</h1>                    <p className="text-medium-emphasis">Sign In to your account</p>                    <CInputGroup className="mb-3">                      <CInputGroupText>                        <CIcon icon={cilUser} />                      </CInputGroupText>                      <CFormInput                        type="email"                        placeholder="Username"                        autoComplete="username"                        feedbackInvalid="Please enter email."                        feedbackValid="Looks good!"                        required                        ref={emailInputRef}                         />                    </CInputGroup>                    <CInputGroup className="mb-4">                      <CInputGroupText>                        <CIcon icon={cilLockLocked} />                      </CInputGroupText>                      <CFormInput                        type="password"                        placeholder="Password"                        autoComplete="current-password"                        feedbackInvalid="Please enter password."                        feedbackValid="Looks good!"                        required                        ref={passwordInputRef}                      />                      <span></span>                    </CInputGroup>                    <CRow>                      <CCol xs={6}>                        <CButton color="primary" className="px-4" onClick={submitHandler}>                          Login                        </CButton>                      </CCol>                      {userValidationError && (                      <div className="errormessage">{userValidationError}</div>                      )}                      <CCol xs={6} className="text-right">                        <CButton color="link" className="px-0">                          Forgot password?                        </CButton>                      </CCol>                    </CRow>                  </CForm>                </CCardBody>              </CCard>            </CCardGroup>          </CCol>        </CRow>      </CContainer>    </div>  )}export default Login
+
+
+appcontent.js anitta:
+
+
+import React, { Suspense } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { CContainer, CSpinner } from '@coreui/react'
+
+// routes config
+import routes from '../routes'
+
+const AppContent = () => {
+  return (
+    <CContainer lg>
+      <Suspense fallback={<CSpinner color="primary" />}>
+        <Routes>
+          {routes.map((route, idx) => {
+            return (
+              route.element && (
+                // <Route
+                //   key={idx}
+                //   path={route.path}
+                //   exact={route.exact}
+                //   name={route.name}
+                //   element={<route.element />}
+                // />
+              )
+            )
+          })}
+        </Routes>
+      </Suspense>
+    </CContainer>
+  )
+}
+
+export default React.memo(AppContent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React, { Suspense } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import {useContext, useEffect } from 'react'
+import { CContainer, CSpinner } from '@coreui/react'
+import AuthContext from '../views/pages/login/Authcontext'
+const Home = React.lazy(() => import('../views/pages/Home/Home'))
+const Type = React.lazy(() => import('../views/pages/Home/Type'))
+const About = React.lazy(() => import('../views/pages/About/About'))
+const Login = React.lazy(() => import('../views/pages/login/Login'))
+const Register = React.lazy(() => import('../views/pages/register/Register'))
+const AllocateCollector = React.lazy(() => import('../views/pages/Corporation/CollectorAllocation/AllocateCollector'))
+const BookingStatus = React.lazy(() => import('../views/pages/Houseowner/BookingStatus/BookingStatus'))
+const BookingHistory = React.lazy(() => import('../views/pages/Houseowner/BookingHistory/BookingHistory'))
+const SlotBooking = React.lazy(() => import('../views/pages/Houseowner/SlotBooking/SlotBooking'))
+import Homeservices from '../views/pages/Houseowner/HouseownerLandingPage/HouseownerLandingPage'
+const SuperAdminservices = React.lazy(() =>
+  import('../views/pages/Corporation/SuperAdmin/SuperAdminLandingPage/SuperAdminLandingPage'),
+)
+const WasteReport = React.lazy(() => import('../views/pages/Corporation/CollectorAllocation/wastereport'))
+const SlotBooked = React.lazy(() => import('../views/pages/Houseowner/SlotBooking/SlotBooked'))
+
+
+// routes config
+import routes from '../routes'
+
+const AppContent = () => {
+  const authCtx = useContext(AuthContext)
+  // console.log("isLoggedIn",isLoggedIn)
+  return (
+    <CContainer lg>
+      <Suspense fallback={<CSpinner color="primary" />}>
+      
+        {authCtx.isLoggedIn ? (
+          <Routes>
+            <Route
+              exact
+              path="/houseowner-dashboard"
+              name="Houseowner Landing Page"
+              element={<Homeservices />}
+            />
+            <Route
+              exact
+              path="/superadmin-dashboard"
+              name="superadmin Landing Page"
+              element={<SuperAdminservices />}
+            />
+            <Route exact path="/allocatecollector" name="Collector Allocation Page" element={<AllocateCollector />} />
+            <Route exact path="/wastereport" name="Waste Report Page" element={<WasteReport />} />
+            <Route exact path="/bookingstatus" name="Booking Status Page" element={<BookingStatus />} />
+            <Route exact path="/bookinghistory" name="Booking History Page" element={<BookingHistory />} />
+            <Route exact path="/slotbooking" name="Slotbooking Page" element={<SlotBooking />} />
+            <Route exact path="/slotbooked" name="Slotbooked Page" element={<SlotBooked />} />
+            </Routes>
+              ):
+              ( 
+                <Routes>
+                <Route exact path="/Home" name="Home" element={<Home />} />
+                <Route exact path="/Type" name="Type" element={<Type />} />
+                <Route exact path="/register" name="register" element={<Register />} />
+                <Route exact path="/login" name="login" element={<Login />} />
+                <Route exact path="/about" name="about" element={<About />} />
+                </Routes> )
+              }
+              </Suspense>
+              </CContainer>
+              )
+              }
+              export default React.memo(AppContent)
+
+
+
+PORT=3000
+CHOKIDAR_USEPOLLING=true
+REACT_APP_API_URL=http://127.0.0.1:5000/
+
+
+
+appheadernew
+
+import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { useState } from 'react'
+import {
+  CContainer,
+  CNavbar,
+  CNavbarBrand,
+  CNavbarToggler,
+  CCollapse,
+  CNavbarNav,
+  CNavLink,
+} from '@coreui/react'
+import CIcon from '@coreui/icons-react'
+import { cilBell, cilEnvelopeOpen, cilList, cilMenu } from '@coreui/icons'
+import { AppHeaderDropdown } from './header/index'
+
+const AppHeader = () => {
+  const dispatch = useDispatch()
+  const sidebarShow = useSelector((state) => state.sidebarShow)
+
+  const [visible, setVisible] = useState(false)
+  return (
+    <div class="d-flex flex-row">
+      <CNavbar expand="lg" colorScheme="light" className="bg-white" style={{ marginBottom: '10%' }}>
+        <CContainer fluid>
+          <CNavbarBrand href="/home">Home</CNavbarBrand>
+          <CNavbarToggler
+            aria-label="Toggle navigation"
+            aria-expanded={visible}
+            onClick={() => setVisible(!visible)}
+          />
+          <CCollapse className="navbar-collapse" visible={visible}>
+            <CNavbarNav component="nav">
+              <CNavLink href="/about" active>
+                About
+              </CNavLink>
+              <CNavLink href="/login" active>
+                Login
+              </CNavLink>
+              <CNavLink href="/register" active>
+                Register
+              </CNavLink>
+            </CNavbarNav>
+          </CCollapse>
+        </CContainer>
+      </CNavbar>
+    </div>
+  )
+}
+
+export default AppHeader
+
+
+app constent
+
+import React, { Suspense } from 'react'
+import { Navigate, Route, Routes } from 'react-router-dom'
+import { useContext, useEffect } from 'react'
+import { CContainer, CSpinner } from '@coreui/react'
+import AuthContext from '../views/pages/login/Authcontext'
+const Home = React.lazy(() => import('../views/pages/Home/Home'))
+const Type = React.lazy(() => import('../views/pages/Home/Type'))
+const About = React.lazy(() => import('../views/pages/About/About'))
+const Login = React.lazy(() => import('../views/pages/login/Login'))
+const Register = React.lazy(() => import('../views/pages/register/Register'))
+const AllocateCollector = React.lazy(() =>
+  import('../views/pages/Corporation/CollectorAllocation/AllocateCollector'),
+)
+const BookingStatus = React.lazy(() =>
+  import('../views/pages/Houseowner/BookingStatus/BookingStatus'),
+)
+const BookingHistory = React.lazy(() =>
+  import('../views/pages/Houseowner/BookingHistory/BookingHistory'),
+)
+const SlotBooking = React.lazy(() => import('../views/pages/Houseowner/SlotBooking/SlotBooking'))
+import Homeservices from '../views/pages/Houseowner/HouseownerLandingPage/HouseownerLandingPage'
+const SuperAdminservices = React.lazy(() =>
+  import('../views/pages/Corporation/SuperAdmin/SuperAdminLandingPage/SuperAdminLandingPage'),
+)
+const WasteReport = React.lazy(() =>
+  import('../views/pages/Corporation/CollectorAllocation/wastereport'),
+)
+const SlotBooked = React.lazy(() => import('../views/pages/Houseowner/SlotBooking/SlotBooked'))
+
+// routes config
+import routes from '../routes'
+
+const AppContent = () => {
+  const authCtx = useContext(AuthContext)
+  let role = sessionStorage.getItem('role')
+  console.log("role",role)
+  return (
+    <CContainer lg>
+        {(authCtx.isLoggedIn && role === '1') ? (
+          <Routes>
+            <Route
+              exact
+              path="/houseowner-dashboard"
+              name="Houseowner Landing Page"
+              element={<Homeservices />}
+            />
+            <Route
+              exact
+              path="/superadmin-dashboard"
+              name="superadmin Landing Page"
+              element={<SuperAdminservices />}
+            />
+            <Route
+              exact
+              path="/allocatecollector"
+              name="Collector Allocation Page"
+              element={<AllocateCollector />}
+            />
+            <Route exact path="/wastereport" name="Waste Report Page" element={<WasteReport />} />
+            <Route
+              exact
+              path="/bookingstatus"
+              name="Booking Status Page"
+              element={<BookingStatus />}
+            />
+            <Route
+              exact
+              path="/bookinghistory"
+              name="Booking History Page"
+              element={<BookingHistory />}
+            />
+            <Route exact path="/slotbooking" name="Slotbooking Page" element={<SlotBooking />} />
+            <Route exact path="/slotbooked" name="Slotbooked Page" element={<SlotBooked />} />
+          </Routes>
+         ) : (
+          <Navigate  to="/home" />
+        )}
+        
+    </CContainer>
+
+    
+  )
+}
+export default React.memo(AppContent)
+
+app
+import React, { Component, Suspense } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import './scss/style.scss'
+import Homeservices from './views/pages/Houseowner/HouseownerLandingPage/HouseownerLandingPage'
+const loading = (
+  <div className="pt-3 text-center">
+    <div className="sk-spinner sk-spinner-pulse"></div>
+  </div>
+)
+
+// Containers
+const DefaultLayout = React.lazy(() => import('./layout/DefaultLayout'))
+const AppHeader = React.lazy(() => import('./components/AppHeader'))
+
+// Pages
+const Home = React.lazy(() => import('./views/pages/Home/Home'))
+const Type = React.lazy(() => import('./views/pages/Home/Type'))
+const About = React.lazy(() => import('./views/pages/About/About'))
+const Login = React.lazy(() => import('./views/pages/login/Login'))
+const Register = React.lazy(() => import('./views/pages/register/Register'))
+const AllocateCollector = React.lazy(() =>
+  import('./views/pages/Corporation/CollectorAllocation/AllocateCollector'),
+)
+const BookingStatus = React.lazy(() =>
+  import('./views/pages/Houseowner/BookingStatus/BookingStatus'),
+)
+const BookingHistory = React.lazy(() =>
+  import('./views/pages/Houseowner/BookingHistory/BookingHistory'),
+)
+const Homepage = React.lazy(() => import('./views/pages/Home/Home'))
+const SlotBooking = React.lazy(() => import('./views/pages/Houseowner/SlotBooking/SlotBooking'))
+
+const SuperAdminservices = React.lazy(() =>
+  import('./views/pages/Corporation/SuperAdmin/SuperAdminLandingPage/SuperAdminLandingPage'),
+)
+const WasteReport = React.lazy(() =>
+  import('./views/pages/Corporation/CollectorAllocation/wastereport'),
+)
+const SlotBooked = React.lazy(() => import('./views/pages/Houseowner/SlotBooking/SlotBooked'))
+const Page404 = React.lazy(() => import('./views/pages/page404/Page404'))
+const Page500 = React.lazy(() => import('./views/pages/page500/Page500'))
+import { useContext } from 'react'
+import AuthContext from './views/pages/login/Authcontext'
+
+function App() {
+  const authCtx = useContext(AuthContext)
+  return (
+    <BrowserRouter>
+      <Suspense fallback={loading}>
+        <AppHeader />
+        <Routes>
+          <Route exact path="/register" name="register" element={<Register />} />
+          <Route exact path="/home" name="Home" element={<Home />} />
+          <Route exact path="/login" name="login" element={<Login />} />
+          <Route exact path="/about" name="about" element={<About />} />
+          {/* <Route exact path="/Homee" name="Home Page" element={<Homepage />} /> */}
+          <Route exact path="/500" name="Page 500" element={<Page500 />} />
+          <Route path="*" name="Home" element={<DefaultLayout />} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
+  )
+}
+
+export default App
+
+
+
+
+
+API BASEPATH
+API ENDPOINTS
+
+fetch seperate service - http request = commonhttp.js 
+promise- update
+- promise success
+- promise error
+async await
+
+
+    // const url = process.env.REACT_APP_API_URL + 'login/'
+      // fetch(url, {
+      //   method: 'POST',
+      //   headers: constants.HEADER_WITHOUT_TOKEN,
+      //   body: JSON.stringify(logindata),
+      // })
+
+before commit 
+change all the backendchanges
+
+packagejson files coreui
+
+
+.decode('UTF-8')
+
+ {authCtx.isLoggedIn && role === '2' ? (
+        <Routes>
+          <Route
+            exact
+            path="/superadmin-dashboard"
+            name="superadmin Landing Page"
+            element={<SuperAdminservices />}
+          />
+          <Route
+            exact
+            path="/allocatecollector"
+            name="Collector Allocation Page"
+            element={<AllocateCollector />}
+          />
+          <Route exact path="/wastereport" name="Waste Report Page" element={<WasteReport />} />
+        </Routes>
+      ) : (
+        <Navigate to="/home" />
+      )}
+
+
+
+- Created app header w.r.t login and logout
+- Created role based routing
+
+stringliteral -concantination
+
+
+
+
+auth.py
+
+import jwt
+from flask import jsonify
+from flask import request
+from functools import wraps
+
+
+def login_needed(function):
+
+  @wraps(function)
+  def wrap():
+        """
+        Function to authenticate each API wjich need authentication.
+        HS256 algorithm is used for decoding the jwt token
+        and the payload is send to each function.
+        """
+        token=request.headers['Authorization']
+        if not token:
+            return jsonify({"message":'Unauthenticated', "status" : 401})
+        try:
+            payload=jwt.decode(token,'secret',algorithms=['HS256'])
+        except jwt.ExpiredSignatureError:
+          return jsonify({"message":'Unauthenticated', "status" : 401})
+        return function()
+
+  return wrap
+
+corporation.py
+
+import datetime
+import jwt
+import psycopg2
+import psycopg2.extras
+from flask import current_app as app
+from flask import jsonify
+from flask import request
+import resources.db_helper.helperfile as helperfile
+from resources.routes.routes import corporationcontroller
+from resources.auth.Auth import login_needed
+from resources.tuple_to_dict import tuple_to_dict
+from resources.constant.constant import STATUS_PENDING,STATUS_PAID,STATUS_COLLECTED
+
+@corporationcontroller.route('/warddata')
+def get_ward_details():
+
+    """"
+    This function is used for getting ward details
+    including ward number and ward name 
+    """
+    try:
+        app.logger.info("DB connection opened")
+        conn = helperfile.get_db_connection()
+        if conn:
+            app.logger.info("DB Connected")
+            cur = conn.cursor()
+            sql='SELECT wardno,wardname FROM ward;'                      #db connection opened
+            ward_details=tuple_to_dict(sql)
+            app.logger.info("getting waste details")
+
+            return jsonify(data=ward_details,status=200)
+
+        else:
+            app.logger.error("Internal Server Error")
+            return(jsonify(message="DB Connection Failed",
+                            status=500))
+    except Exception as exceptn:
+        app.logger.info(exceptn)
+
+        return jsonify(message="Internal Server Error",status=500)
+
+    finally:
+        if conn:
+            cur.close()
+            conn.close()  #db connection closed    
+            app.logger.info("DB connection closed")
+
+
+
+@corporationcontroller.route('/wastedata')
+def get_waste_details():
+
+    """
+    This is a function to get the details of waste, that can be collected from houseowners, 
+    such as Waste type and charge.
+    """
+    try:
+        conn = helperfile.get_db_connection()  #db connection opened
+        if conn:
+            app.logger.info("DB connection opened")
+            cur = conn.cursor()
+            sql='SELECT id,waste_type,charge FROM waste;'
+            waste_details = tuple_to_dict(sql)
+
+            return jsonify(data=waste_details,status=200)
+
+        else:
+            app.logger.error("DB Connection Failed")
+
+            return jsonify(message="DB Connection Failed",status=500) 
+
+    except Exception as exceptn:
+        app.logger.exception(exceptn)
+
+        return jsonify(message="Internal Server Error",status=500)
+
+    finally:
+        if conn:
+            cur.close()
+            conn.close()
+            app.logger.info("DB connection closed")
+
+@corporationcontroller.route('/supervisorlist',methods = ['POST'])
+@login_needed
+def getSupervisors():
+    """
+    This function is used for getting list of supervisors from the table employees
+    
+    """
+    try:
+        conn = helperfile.get_db_connection()  #db connection opened
+        if conn:
+            app.logger.info("connection opened")
+            cur = conn.cursor()
+            cur.execute('SELECT firstname,lastname FROM corporation_employee WHERE role_id =4;')
+            supervisorsList = cur.fetchall()
+            app.logger.info("Getting supervisor details")
+            final_list=[]
+            for firstname,lastname in supervisorsList:
+                singleitem= firstname,lastname
+                name = " ".join(singleitem)
+                final_list.append(name)
+            supervior_dict={}
+            supervior_dict["name"]=final_list
+            return jsonify(data=supervior_dict,status=200)
+
+        else:
+            app.logger.error("DB Connection Failed")
+
+            return jsonify(message="DB Connection Failed",status=500)
+
+    except Exception as exceptn:
+        app.logger.info(exceptn)
+
+        return jsonify(message="Internal Server Error",status=500)
+
+    finally:
+        if conn:
+            cur.close()
+            conn.close()
+            app.logger.info("DB connection closed")
+@corporationcontroller.route('/collectorlist', methods = ['POST'])
+@login_needed
+def postCollectorList():
+    """
+    This function is used for getting the waste collectors list with respect to the ward selected by the user
+    
+    """
+    data = request.get_json()
+    data_wardno = data.get('wardno')
+    try:
+        conn = helperfile.get_db_connection()                #db connection opened
+        if conn:
+            app.logger.info("connection opened")
+            cur = conn.cursor()
+            sql='SELECT id,firstname,lastname,email,phoneno,address,ward_no \
+                FROM corporation_wastecollector WHERE ward_no ={}'.format(data_wardno)
+            wastecollectorlist =tuple_to_dict(sql)
+            if list:
+
+                return jsonify(data=wastecollectorlist,status=200)
+                
+            else:
+                app.logger.info("no data from db which matches the entered book id")
+
+                return jsonify(message="No data matching the id",status=500)
+        else:
+            app.logger.error("DB Connection Failed")
+
+            return jsonify(message="DB Connection Failed",status=500)
+
+    except Exception as exceptn:
+            app.logger.info(exceptn)
+
+            return jsonify(message="Internal Server Error",status=500)
+
+    finally:
+        if conn:
+            cur.close()
+            conn.close()
+            app.logger.info("DB connection closed")
+
+
+
+        
+@corporationcontroller.route('/collectionstatus', methods = ['POST'])
+@login_needed
+def postCollectionStatus():
+    """
+    This function is used for getting the waste collection status with respect to the collection date entered by the user
+    
+    """
+    conn = helperfile.get_db_connection()  #db connection opened
+    try:
+        if conn:
+            app.logger.info("DB connection opened")
+            cur = conn.cursor()
+            cur.execute('SELECT collection_date,supervisor_id,ward_no FROM houseowner_collectionstatus WHERE collection_date ={}'.format(collection_date))
+            collection_status = cur.fetchall()
+            if collection_status:
+                final_list=[]
+                for status,collection_date,supervisor_id,ward_no in collection_status:
+                    singleitem = {}
+                    cur.execute('SELECT wardname FROM ward WHERE wardno = {}'.format(ward_no))
+                    singleitem["wardname"] = cur.fetchone()[0]
+                    cur.execute('SELECT firstname FROM corporation_employee WHERE id = {}'.format(supervisor_id))  
+                    firstname= cur.fetchone()[0]
+                    cur.execute('SELECT lastname FROM corporation_employee WHERE id = {}'.format(supervisor_id))
+                    lastname= cur.fetchone()[0]
+                    singleitem["supervisor"] = firstname + lastname
+                    singleitem["status"] = status
+                    final_list.append(singleitem)
+
+                return jsonify(data=final_list,status=200)
+
+            else:
+                app.logger.info("no data from db which matches the entered book id")
+
+                return jsonify(message="No data matching the collection_date",status=500)
+        else:
+            app.logger.error("DB Connection Failed")
+
+            return jsonify(message="DB Connection Failed",status=500)
+
+    except Exception as exceptn:
+        app.logger.exception(exceptn)
+
+        return jsonify(message="Internal Server Error",status=500)
+
+    finally:
+        if conn:
+            cur.close()
+            conn.close()
+            app.logger.info("DB connection closed")
+
+@corporationcontroller.route('/paymentreport')
+@login_needed
+def getPaymentReport():
+    conn = helperfile.get_db_connection()
+    try:
+        if conn:
+            app.logger.info("DB Connected")
+            cur = conn.cursor()
+            sql='SELECT houseowner_id,last_paydate FROM houseowner_paymentstatus'
+            payments_status=tuple_to_dict(sql)
+            today = datetime.date.today()
+            current_month = today.month      
+            final_list=[]
+            for item in payments_status:
+                ho_id = item['houseowner_id']
+                lastpay_month = item['last_paydate'].month
+                singleitem = {}
+                cur.execute('SELECT firstname FROM houseowner_data WHERE id={}'.format(ho_id))
+                singleitem["firstname"] = cur.fetchone()[0]
+                cur.execute('SELECT lastname FROM houseowner_data WHERE id={}'.format(ho_id))
+                singleitem["last"] = cur.fetchone()[0]
+                cur.execute('SELECT phoneno FROM houseowner_data WHERE id={}'.format(ho_id))
+                singleitem["phoneno"] = cur.fetchone()[0]
+                cur.execute('SELECT address FROM houseowner_data WHERE id={}'.format(ho_id))
+                singleitem["address"] = cur.fetchone()[0]
+                cur.execute('SELECT wardno FROM houseowner_data WHERE id={}'.format(ho_id))
+                wardno = cur.fetchone()[0]
+                cur.execute('SELECT wardname FROM ward WHERE wardno={}'.format(wardno))
+                singleitem["wardname"] = cur.fetchone()[0]
+
+                if current_month == lastpay_month:    
+                    singleitem["status"] = STATUS_PAID
+                else:
+                    singleitem["status"] = STATUS_PENDING
+                final_list.append(singleitem)
+            return jsonify(data=final_list,status=200)
+
+        else:
+            app.logger.error("DB Connection Failed")
+
+            return(jsonify(message="DB Connection Failed",status=500))
+
+    except Exception as exceptn:
+        app.logger.exception(exceptn)
+
+        return jsonify(message="Internal Server Error",status=500)
+
+    finally:
+        if conn:
+            cur.close()
+            conn.close()
+            app.logger.info("DB connection closed")
+
+        
+@corporationcontroller.route('/collectorallocation', methods = ['POST'])
+@login_needed
+def postCollectorAllocation():
+
+    data = request.get_json()
+    wardno = int(data.get('wardno'))
+    supervisor_id = data.get('supervisor_id')
+    collection_date = data.get('collection_date')
+    status = data.get('status')
+    try:
+        conn = helperfile.get_db_connection()
+        if conn:
+            app.logger.info("DB Connected")
+            cur = conn.cursor()
+            cur.execute('INSERT INTO houseowner_collectionstatus \
+                        (status, collection_date, supervisor_id, ward_no) \
+                        VALUES (%s,%s,%s,%s)RETURNING id',(status, collection_date, supervisor_id, wardno))   #insert query
+            cur.execute('SELECT slot_id FROM houseowner_bookingstatus')
+            columns = [column[0] for column in cur.description]
+            bookingstaus = []
+            for row in cur.fetchall():
+                bookingstaus.append(dict(zip(columns, row)))
+            for slots in bookingstaus:
+                    slotid=slots['slot_id']
+                    cur.execute('SELECT houseowner_id FROM houseowner_slotbooking WHERE id={}'.format(slotid))
+                    ho_id = cur.fetchone()[0]
+                    cur.execute('SELECT wardno FROM houseowner_data WHERE id={}'.format(ho_id))
+                    ward_no = cur.fetchone()[0]
+            if(ward_no == wardno):
+                    cur.execute('UPDATE houseowner_bookingstatus \
+                                SET collection_date=%s,supervisor_id=%s,status=%s \
+                                WHERE id=%s',[collection_date,supervisor_id,status,slotid])
+                    
+                    return ({'status':200,'message':"Successfully Updated"})
+                
+            else:
+                    
+                    return({'status':401,'message':"Something went wrong"})
+        else:
+            app.logger.error("DB Connection Failed")
+
+            return(jsonify(message="DB Connection Failed",status=500))
+
+    except Exception as exceptn:
+        app.logger.exception(exceptn)
+
+        return jsonify(message="Internal Server Error",status=500)
+    
+    finally:
+        if conn:
+            cur.close()
+            conn.close()
+            app.logger.info("DB connection closed")
+
+
+@corporationcontroller.route('/wastereport', methods = ['POST'])
+@login_needed
+def postWasteReport():
+    data = request.get_json()
+    wasteid = int(data.get('wasteid',''))
+    try:
+        conn = helperfile.get_db_connection()
+        if conn:
+            app.logger.info("DB connected")
+            cur = conn.cursor()
+            sql='SELECT id,quantity,houseowner_id FROM houseowner_slotbooking WHERE waste_id={}'.format(wasteid)
+            slots = tuple_to_dict(sql)
+            ward_quantity_list = {}
+            for slot in slots:
+                cur.execute('SELECT status FROM houseowner_bookingstatus WHERE slot_id={}'.format(slot['id']))
+                status = cur.fetchone()
+                if status != STATUS_COLLECTED:
+                    cur.execute('SELECT wardno FROM houseowner_data WHERE id={}'.format(slot['houseowner_id']))
+                    wardno = cur.fetchone()[0]
+                    cur.execute('SELECT wardname FROM ward WHERE wardno={}'.format(wardno))
+                    wardname = cur.fetchone()[0]
+                    if wardname not in ward_quantity_list:
+                        ward_quantity_list[wardname] = slot['quantity']
+                    else:
+                        ward_quantity_list[wardname] = ward_quantity_list[wardname] + slot['quantity']
+            final_list = [ward_quantity_list]
+
+            return jsonify(data=final_list,status=200)
+
+        else:
+            app.logger.error("DB Connection Failed")
+
+            return(jsonify(message="DB Connection Failed",status=500))
+
+    except Exception as exceptn:
+        app.logger.exception(exceptn)
+
+        return jsonify(message="Internal Server Error",status=500)
+
+    finally:
+        if conn:
+            cur.close()
+            conn.close()
+            app.logger.info("DB connection closed")
+
+
+@corporationcontroller.route('/collectionstatusupdate', methods = ['POST'])
+@login_needed
+def postCollectionStatusUpdate():
+    data = request.get_json()
+    supervisor_id = data.get('userid','')
+    status = data.get('status','')
+    wardno = data.get('wardno','')
+    collection_date = data.get('collection_date','')
+    try:
+        conn = helperfile.get_db_connection()
+        if conn:
+            app.logger.info("DB connected")
+            cur = conn.cursor()
+            cur.execute('SELECT status FROM houseowner_collectionstatus \
+                        WHERE supervisor_id={} AND ward_no={} AND collection_date={}'.format(supervisor_id,wardno,collection_date))
+            collection_status = cur.fetchone()[0]
+            cur.execute('SELECT status FROM houseowner_bookingstatus \
+                        WHERE supervisor_id={} AND collection_date={} '.format(supervisor_id,collection_date))
+            booking_status=cur.fetchone()
+
+            if collection_status is None:
+
+                return jsonify(status=401,message="Not Found")
+
+            else:
+                cur.execute('UPDATE houseowner_collectionstatus SET status={} WHERE supervisor_id={}'.format(status,supervisor_id))
+                for item in booking_status:
+                    cur.execute('UPDATE houseowner_bookingstatus SET status={} WHERE supervisor_id={}'.format(status,supervisor_id))
+
+                return ({'status':1})
+        else:
+            app.logger.error("DB Connection Failed")
+            return(jsonify(message="DB Connection Failed",status=500))
+
+    except Exception as exceptn:
+        app.logger.exception(exceptn)
+
+        return jsonify(message="Not Found",status=500)
+
+    finally:
+        if conn:
+            cur.close()
+            conn.close()
+            app.logger.info("DB connection closed")
+
+
+
+@corporationcontroller.route('/updatecollector',  methods = ['PUT'])
+@login_needed
+def updateCollector():
+    """
+    Function for updating the waste collector's details like email, phone number and address.
+
+    """
+    data = request.get_json()
+    data_id =data.get('id')
+    data_email=data.get('email')
+    data_phoneno=data.get('phoneno')
+    data_address=data.get('address')
+    try:
+        conn = helperfile.get_db_connection()
+        if conn:
+            cur = conn.cursor()
+            cur.execute('SELECT id FROM corporation_wastecollector WHERE id={} '.format(data_id))
+            collector = cur.fetchall()
+            if collector is None:
+                return jsonify(status=500,message="Not Found")
+            else:
+                cur.execute('UPDATE corporation_wastecollector SET email=%s,phoneno=%s,address=%s WHERE id=%s',[data_email,data_phoneno,data_address,data_id])
+                return jsonify(status=200,message="Successfully Updated")
+        else:
+            app.logger.error("DB Connection Failed")
+            return(jsonify(message="DB Connection Failed",status=500))
+    except Exception as exceptn:
+        app.logger.exception(exceptn)
+        return jsonify(message="Not Found",
+                            status=500)
+    finally:
+        if conn:
+            cur.close()
+            conn.close()
+            app.logger.info("DB connection closed")
+
+
+allocatecollector.js
+
+import DataTable from 'react-data-table-component'
+import React, { useEffect, useState } from 'react'
+import { CFormSelect } from '@coreui/react'
+
+const AllocateCollector = () => {
+  let token = sessionStorage.getItem('jwt')
+  const [data, setData] = useState([])
+  const [wardno, setWardno] = useState('')
+  const [supervisorid, setSupervisorid] = useState('')
+  const [wardData, setWardData] = useState()
+  const [supervisorData, setSupervisorData] = useState()
+
+  useEffect(() => {
+    getWardData()
+  }, [])
+  const getWardData = () => {
+    fetch('http://127.0.0.1:5000/corporation/warddata', {
+      method: 'GET',
+    })
+      .then((response) => {
+        return response.json()
+      })
+      .then(function (data) {
+        setWardData(data.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }
+  const handleWard = (e) => {
+    e.preventDefault()
+    getCollectorList(e.target.value)
+  }
+  const handleSupervisor = (e) => {
+    e.preventDefault()
+    setSupervisorid(e.target.value)
+  }
+
+  useEffect(() => {
+    getSupervisorData()
+  }, [])
+  const getSupervisorData = () => {
+    fetch('http://127.0.0.1:5000/corporation/supervisorlist', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: token,
+      },
+    })
+      .then((response) => {
+        return response.json()
+      })
+      .then(function (data) {
+        setSupervisorData(data.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }
+  const getCollectorList = (value) => {
+    fetch('http://127.0.0.1:5000/corporation/collectorlist', {
+      method: 'POST',
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+        Authorization: token,
+      },
+      body: JSON.stringify({ wardno: value }),
+    })
+      .then((response) => {
+        return response.json()
+      })
+      .then((res) => {
+        setData(res.data)
+      })
+  }
+  const columns = [
+    {
+      name: 'Id ',
+      selector: (row) => row.id,
+    },
+    {
+      name: 'Firstname ',
+      selector: (row) => row.firstname,
+    },
+    {
+      name: 'Last name',
+      selector: (row) => row.lastname,
+    },
+    {
+      name: 'Email',
+      selector: (row) => row.email,
+    },
+    {
+      name: 'Address',
+      selector: (row) => row.address,
+    },
+    {
+      name: 'Phone number',
+      selector: (row) => row.phoneno,
+    },
+  ]
+  return (
+    <div>
+      <div className="selectdata">
+        <CFormSelect
+          placeholder="Select Ward"
+          aria-label="Default select example"
+          className="mb-.5"
+          feedbackInvalid="Please select Wardname."
+          feedbackValid="Looks good!"
+          id="validationCustom01"
+          required
+          onChange={(e) => handleWard(e)}
+        >
+          {wardData?.map((ward) => {
+            return (
+              <option key={ward.wardno} value={ward.wardno}>
+                {ward.wardname}
+              </option>
+            )
+          })}
+        </CFormSelect>
+        <CFormSelect
+          placeholder="Select Supervisor"
+          aria-label="Default select example"
+          className="mb-.5"
+          feedbackInvalid="Please select Supervisor."
+          feedbackValid="Looks good!"
+          id="validationCustom01"
+          required
+          onChange={(e) => handleSupervisor(e)}
+        >
+          {supervisorData?.map((supervisor) => {
+            return (
+              <option key={supervisor.name} value={supervisor.name}>
+                {supervisor.name}
+              </option>
+            )
+          })}
+        </CFormSelect>
+      </div>
+      <div className="bookingstatus">
+        <h1>
+          <center>Collector List</center>
+        </h1>
+        <DataTable className="statustable" data={data} columns={columns} pagination />
+      </div>
+    </div>
+  )
+}
+
+export default AllocateCollector
+
+
+
+
+
+._nav updated
+
+import React from 'react'
+import CIcon from '@coreui/icons-react'
+import { cilHome, cilInfo, cilPuzzle } from '@coreui/icons'
+import { CNavGroup, CNavItem } from '@coreui/react'
+let role = sessionStorage.getItem('role')
+if (role === '2') {
+const _nav = [
+  {
+    component: CNavItem,
+    name: 'Allocate Collector',
+    to: '/Home',
+    icon: <CIcon icon={cilHome} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Contract Employees',
+    to: '/about',
+    icon: <CIcon icon={cilInfo} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Update Waste details',
+    to: '/login',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Sign-up',
+    to: '/register',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Waste Collection Status',
+    to: '/register',
+    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+  },
+]
+}
+else if(role === '3'){
+  const _nav = [
+    {
+      component: CNavItem,
+      name: 'Home',
+      to: '/Home',
+      icon: <CIcon icon={cilHome} customClassName="nav-icon" />,
+    },
+  ]
+  }
+  else{
+    const _nav = [
+      {
+        component: CNavItem,
+        name: 'Home',
+        to: '/Home',
+        icon: <CIcon icon={cilHome} customClassName="nav-icon" />,
+      },
+    ]
+  }
+
+export default _nav
+
+
+
+{
+      name: 'Status',
+      selector: (row) => (
+        <CBadge color={
+          row.status === 'Pending' ? 'warning' :
+          row.status === 'Approved' ? 'success' :
+          row.status === 'Rejected' ? 'danger' :
+          'primary'
+        }>
+          {row.status}
+        </CBadge>
+      ),
+    },
+
+constants file location
+constant for enum for roles
+
+doubts:
+enums
+side navbar toggle
+houseowner homepage
+
+
+tasks to complete:
+
+01/03/2023
+allocate collector - 
+payment history
+
+02/03/2023
+dashboard -backend
+dashboard -frontend
+
+03/03/2023
+
+supervisor page
+waste collection status
+
+04/03/2023 , 05/03/2023
+
+payment
+update waste details
+
+06/03/2023
+
+contract employees and resolve comments, code cleaning
+

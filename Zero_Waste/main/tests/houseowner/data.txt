@@ -1,0 +1,193 @@
+
+  // "peerDependencies": {
+  //   "react": ">=16.8.0",
+  //   "react-dom": ">=16.8.0"
+  // },
+
+
+
+
+
+
+import React from 'react'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import {
+  CButton,
+  CCard,
+  CCardBody,
+  CCardGroup,
+  CCol,
+  CContainer,
+  CForm,
+  CFormInput,
+  CInputGroup,
+  CInputGroupText,
+  CRow,
+} from '@coreui/react'
+import CIcon from '@coreui/icons-react'
+import { cilLockLocked, cilUser } from '@coreui/icons'
+import './Login.css'
+const Login = () => {
+  const navigate = useNavigate()
+  const [validated, setValidated] = useState(false)
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [userValidationErrorr, setUserValidationErrorr] = useState('')
+  const handleEmail = (e) => {
+    e.preventDefault()
+    setEmail(e.target.value)
+  }
+  const handlePassword = (e) => {
+    e.preventDefault()
+    setPassword(e.target.value)
+    setUserValidationErrorr('')
+  }
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    const form = event.currentTarget
+    if (form.checkValidity() === false) {
+      setValidated(false)
+      event.preventDefault()
+      event.stopPropagation()
+    }
+    setValidated(true)
+    if (email && password) {
+      const logindata = { email, password }
+      fetch('http://127.0.0.1:5000/login/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(logindata),
+      })
+        .then((response) => response.json())
+        .then((resJson) => {
+          console.log(resJson)
+          sessionStorage.setItem('jwt', resJson.token)
+          sessionStorage.setItem('role', resJson.role)
+          if (resJson.role === 1) {
+            navigate('/houseowner-dashboard')
+          } else if (resJson.status === 200 && resJson.role === 2) {
+            navigate('/superadminlandingpage')
+          } else {
+            setUserValidationErrorr(resJson.message)
+          }
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    }
+  }
+
+  return (
+    <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
+      <CContainer>
+        <CRow className="justify-content-center">
+          <CCol md={10}>
+            <CCardGroup>
+              <CCard className="p-4">
+                <CCardBody>
+                  <CForm
+                    className="row g-3 needs-validation"
+                    noValidate
+                    validated={validated}
+                    onSubmit={handleSubmit}
+                  >
+                    <h1>Login</h1>
+                    <p className="text-medium-emphasis">Sign In to your account</p>
+                    <CInputGroup className="mb-3">
+                      <CInputGroupText>
+                        <CIcon icon={cilUser} />
+                      </CInputGroupText>
+                      <CFormInput
+                        type="email"
+                        aria-describedby="validationCustom03Feedback"
+                        feedbackInvalid="Please enter email."
+                        placeholder="Email"
+                        feedbackValid="Looks good!"
+                        required
+                        onChange={(e) => handleEmail(e)}
+                      />
+                    </CInputGroup>
+                    <CInputGroup className="mb-4">
+                      <CInputGroupText>
+                        <CIcon icon={cilLockLocked} />
+                      </CInputGroupText>
+                      <CFormInput
+                        type="password"
+                        aria-describedby="validationCustom03Feedback"
+                        feedbackInvalid="Please enter password."
+                        placeholder="Password"
+                        feedbackValid="Looks good!"
+                        required
+                        onChange={(e) => handlePassword(e)}
+                      />
+                      {userValidationErrorr && (
+                        <div className="errormessage">{userValidationErrorr}</div>
+                      )}
+                    </CInputGroup>
+                    <CRow>
+                      <CCol xs={4}>
+                        <CButton type="submit" color="primary" className="px-4">
+                          Login
+                        </CButton>
+                      </CCol>
+                      <CCol xs={8}>
+                        <CButton color="link" className="forgotpassword" size="sm">
+                          Forgot password?
+                        </CButton>
+                      </CCol>
+                    </CRow>
+                  </CForm>
+                </CCardBody>
+              </CCard>
+              <CCard className="text-white bg-primary py-5" style={{ width: '44%' }}>
+                <CCardBody className="text-center">
+                  <div>
+                    <h2>Sign up</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <Link to="/register">
+                      <CButton color="primary" className="mt-3" active tabIndex={-1}>
+                        Register Now!
+                      </CButton>
+                    </Link>
+                  </div>
+                </CCardBody>
+              </CCard>
+            </CCardGroup>
+          </CCol>
+        </CRow>
+      </CContainer>
+    </div>
+  )
+}
+
+export default Login
+
+
+
+
+
+
+
+
+
+
+
+
+
+gggg fewqaaqzaaaaaaaaaz
+ bbbbbbbbbbbb
+
+
+
+
+
+
+
+
