@@ -120,7 +120,7 @@ const Login = () => {
                         <CIcon icon={cilUser} />
                       </CInputGroupText>
                       <CFormInput
-                        data-testid="email"
+                        data-testid="email1"
                         type="email"
                         aria-describedby="validationCustom03Feedback"
                         feedbackInvalid="Please enter email."
