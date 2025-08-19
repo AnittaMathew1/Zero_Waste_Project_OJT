@@ -134,7 +134,7 @@ const Login = () => {
                         <CIcon icon={cilLockLocked} />
                       </CInputGroupText>
                       <CFormInput
-                        data-testid="password"
+                        data-testid="passwordd"
                         type="password"
                         aria-describedby="validationCustom03Feedback"
                         feedbackInvalid="Please enter password."
